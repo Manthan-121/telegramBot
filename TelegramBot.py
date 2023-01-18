@@ -13,7 +13,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [['ES', 'EN']]
     
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(chat_id=update.effective_chat.id, text="""
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="""\n
         /start -> Start the bot
         /Help -> Known the command on this bot
         /info -> check the detail
