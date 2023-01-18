@@ -8,7 +8,7 @@ logging.basicConfig(
 )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    welcome_message = "\t👋Hello " + update.effective_chat.first_name + " " + update.effective_chat.last_name + "\nWelcome to this bot \n How can i help you ❓"
+    welcome_message = "\t👋 Hello " +'\033[1m' + update.effective_chat.first_name + '\033[0m' + update.effective_chat.last_name + "\nWelcome to this bot \n How can i help you❓"
     await context.bot.send_message(chat_id=update.effective_chat.id, text=welcome_message)
     keyboard = [['ES', 'EN']]
     
